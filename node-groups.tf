@@ -6,7 +6,7 @@ resource "aws_eks_node_group" "this" {
   subnet_ids      = aws_subnet.private[*].id
 
   scaling_config {
-    desired_size = 2
+    desired_size = 3
     max_size     = 5
     min_size     = 1
   }
@@ -14,7 +14,7 @@ resource "aws_eks_node_group" "this" {
   ami_type       = "AL2_x86_64" # AL2_x86_64, AL2_x86_64_GPU, AL2_ARM_64, CUSTOM
   capacity_type  = "ON_DEMAND"  # ON_DEMAND, SPOT
   disk_size      = 20
-  instance_types = ["t2.medium"]
+  instance_types = ["t3.medium"]
 
   tags = merge(
     var.tags

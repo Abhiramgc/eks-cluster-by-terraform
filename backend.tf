@@ -1,7 +1,6 @@
 terraform {
   backend "s3" {
-    bucket         = "<REPLACE_WITH_YOUR_REMOTESTATE_BUCKETNAME>"
-    dynamodb_table = "<REPLACE_WITH_YOUR_DYNAMODB_TABLENAME>"
+    bucket         = "terraform-backends3-2022"
     key            = "terraform-aws-eks-workshop.tfstate"
     region         = "us-east-1"
     encrypt        = true
