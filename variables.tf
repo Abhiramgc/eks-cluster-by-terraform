@@ -46,6 +46,6 @@ variable "tags" {
   default = {
     "Project"     = "AWS-EKs"
     "Environment" = "Development"
-    "Owner"       = "ABC
+    "Owner"       = "ABC"
   }
 }
