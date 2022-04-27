@@ -1,6 +1,6 @@
 # instead of using the access keys  and secret keys create assume role and give access
 
-variable "aws_access_key" {
+/*variable "aws_access_key" {
   description = "AWS access key"
   type        = string  
 }
@@ -8,7 +8,7 @@ variable "aws_access_key" {
 variable "aws_secret_key" {
   description = "AWS secret key"
   type        = string
-}
+}*/
 
 variable "region" {
   description = "The aws region. https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html"
